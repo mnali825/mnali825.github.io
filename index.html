@@ -1,1 +1,347 @@
-oh lord its a fire
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Dev</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+  <style type="text/css">
+    .card {
+      border:none;
+      box-shadow: none;
+    }
+    .card-title {
+      color:black;
+    }
+
+    nav {
+      background-color: black;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 1.5em;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+  .element {
+    padding:5px;
+  }
+
+  .intro-header-small {
+    font-size:1.8em; 
+    margin-top:0; 
+  }
+
+  .terminal-bg {
+    display: inline-block;
+    width:165px;
+    height:55px;
+    background-color: black;
+    color:#52B22A;
+    border-top: 10px solid gray;
+    border-radius: 3px;
+    font-family: "Courier";
+    font-size:0.8em;
+  }
+
+  @font-face{
+      font-family: "Rock-Elec";
+      src: url('fonts/ROCKELEC.TTF');
+  }
+
+  .headerbg {
+    background-image: url("img/background-portfolio.jpeg");
+    color:white;
+    padding-bottom: 50px;
+  }
+
+  .guitar {
+    /*font-family: "Rock-Elec";*/
+    font-family: "cursive";
+    font-size:1.1em;
+  }
+
+  .hidden {
+    display:none;
+  }
+
+  .iphone-img {
+    width:100%;
+  }
+  </style>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Web Dev Portfolio</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Back</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="headerbg">
+  <div class="container" style="text-align:center;">
+    <p style="font-size:5.5em; display:inline-block; margin-bottom:0;"><span style="font-size:0.2em;">My name is</span> Mir N. Ali</p>
+    <div class="intro-header-small">and I am a 
+    <div class="terminal-bg"><div class="element" style="display:inline-block;"></div></div>, 
+    <span id="entrepreneur">Entrepreneur</span>, 
+    <span class="guitar">Classical Guitarist</span>, 
+    & 
+    <span style="font-family: cursive; font-size:1.1em;">Fencer</span>
+    </div>
+    <p style="font-size:0.5em" id="note">^ psst. hover over me</p>
+    <p style="font-size:1em; text-align:right;">Though I also enjoy philosophy, psychology, soccer, chess, dancing, music festivals, and brunch - I <em>really</em> love brunch</p>
+    <p style="text-align:right">Note: Elon Musk is my hero</p>
+    <p><a href="#web-apps" class="waves-effect waves-light btn-large" id="web">Web Applications</a><a href="#ios-apps" class="waves-effect waves-light btn-large" style="margin-left:20px; margin-right:20px;" id="ios">iOS Applications</a><a href="#misc" class="waves-effect waves-light btn-large" id="misc">Miscellaneous</a></p>
+  </div>
+</div>
+  <div class="row" style="margin-top:0px;" id="web-apps">
+    <h2 class="center" style="margin-bottom:-15px;">Web Apps</h2>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="http://i6.cims.nyu.edu:14114/home"><img src="img/gd-computer.jpeg"></a>
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+          <p class="title">Great Debate</p>
+          <p><span class="bold">AJAX | Passport.js | MongoDB | Mongoose | Express.js | Handlebars.js| Node.js | JavaScript </span></p>
+          <p>A Reddit style application for debating pop culture trends and icons. Users can securely sign up and "second" (like) arguments seamlessly with AJAX</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="http://i6.cims.nyu.edu:14114/home">Try it live</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="https://github.com/mnali825/Beat-The-Stop/tree/master/blogspot"><img src="img/blogspot-computer.jpeg"></a>
+        </div>
+        <div class="card-content">
+          <p class="title">Blog Spot</p>
+          <p><span class="bold">AJAX | MongoDB | Mongoose | Express.js | Handlebars.js| Node.js | JavaScript</span></p>
+          <p>A blog with a simple content management system. Users can comment seamlessly with AJAX and filter by tags or author.</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="https://github.com/mnali825/Beat-The-Stop/tree/master/blogspot">Check it out on github</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="http://ageoutangels.org"><img src="img/aoa-computer.jpeg"></a>
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+          <p class="title">The Age Out Angels Foundation</p>
+          <p><span class="bold">Stripe API | MySQL | PHP | HTML5 | CSS3 | JavaScript | jQuery </span></p>
+          <p>Foundation dedicated to helping youth transition from the foster care system. Users can sign up for newsletter and securely donate w/ Stripe's API</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="http://ageoutangels.org">Try it live</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="https://github.com/mnali825/ioMessage"><img src="img/iomessage-computer-iphone.jpeg"></a>
+        </div>
+        <div class="card-content">
+          <p class="title">ioMessage</p>
+          <p><span class="bold">Socket.io | Express.js | Handlebars.js| Node.js | JavaScript</span></p>
+          <p>A mobile responsive iMessage inspired real-time chat application build on Express with Socketio</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="https://github.com/mnali825/ioMessage">Check it out on github</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="https://github.com/mnali825/Beat-The-Stop/tree/master/goals"><img src="img/goals-computer-iphone.jpeg"></a>
+        </div>
+        <div class="card-content">
+          <p class="title">Goals</p>
+          <p><span class="bold">AJAX | Passport.js | MongoDB | Mongoose | Express.js | Handlebars.js| Node.js | JavaScript</span></p>
+          <p>A mobile responsive app where users can sign up and save their goals in MongoDB with start and finish date</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="https://github.com/mnali825/Beat-The-Stop/tree/master/goals">Check it out on github</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <a target="_blank" href="http://owlvs.com"><img src="img/ovs-computer.jpeg"></a>
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+          <p class="title">Owl Visual Solutions</p>
+          <p><span class="bold">HTML5 | CSS3 | jQuery</span></p>
+          <p>Mobile responsive landing page for drone photography company focused on art</p>
+        </div>
+        <div class="card-action">
+          <a target="_blank" href="http://owlvs.com">You're already Here!</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <h2 class="center" id="phone-apps">iOS Apps</h2>
+  <p class="center">Written in Swift</p>
+  <div class="row" style="background-image:url(img/iphone-bg.jpeg); background-size:100%; padding:1cm;">
+    <p style="color:black; font-size:1.3em;">Unicorn: A game where you <em>learn</em> coding languages, <em>hire</em> developers, and <em>upgrade</em> work space to become the biggest tech start up </p>
+    <div class="col s12 m6 l3">
+      <img class="iphone-img" src="img/unicorn-app-1.png">
+      <p>Choose "Learn" to learn more programming languages or "Recruit" to hire more developers</p>
+    </div>
+    <div class="col s12 m6 l3">
+      <img class="iphone-img" src="img/unicorn-app-2.png">
+      <p>By learning new programming languages, you increase the knowledge you earn / second</p>
+    </div>
+    <div class="col s12 m6 l3">
+      <img class="iphone-img" src="img/unicorn-app-3.png">
+      <p>Choose new employees by their cost / second and efficiency / second to maximize profit</p>
+    </div>
+    <div class="col s12 m6 l3">
+      <img class="iphone-img" src="img/unicorn-app-4.png">
+      <p>Starting from your mother's basement, build you're empire up to a building in Silicon Valley</p>
+    </div>
+    <div class="center"><a target="_blank" href="https://github.com/mnali825/Unicorn-iOS" class="waves-effect waves-light btn-large" id="web">Code on Github</a></div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m3"><img style="margin-left:200px" class="iphone-img" src="img/harness-app-1.png"></div>
+    <div class="col s12 m6 center" style="padding-top:50px;">
+      <h3>Harness</h3>
+      <p>An app about renewable energy</p>
+      <p>Learn about:</p>
+      <ul>
+        <li>Efficiency</li>
+        <li>Cost / kWh</li>
+        <li>Fun Facts</li>
+        <li>Wikipedia</li>
+        <li>Instructables</li>
+      </ul>
+      <div class="center"><a target="_blank" href="https://github.com/mnali825/Harness-iOS" class="waves-effect waves-light btn-large" id="web">Code on Github</a></div>
+    </div>
+    <div class="col s12 m3"><img style="margin-left:-200px;" class="iphone-img" src="img/harness-app-2.png"></div>
+  </div>
+
+  <div style="background-color:#57078E; color:white;">
+    <div id="misc-stuff" class="center container" style="padding:20px;">
+      <h2>Miscellaneous</h2>
+      <div class="row">
+        <div class="col s12 m6 l6" style="border:2px solid white; border-radius:5px; margin-right:30px;">
+          <h5>Classical Guitar (8 years)</h5>
+          <p>I play the <span class="bold">Manuel Rodriguez e Hijos model C</span></p>
+          <p class="bold">Here are my favorite songs to listen to and play:</p>
+          <ul>
+            <li><em>Recuerdos de la Alhambra</em> by Francisco Tarrega 
+            <audio controls><source src="music/rec.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><em>Asturias (Leyanda)</em> by Isaax Albeniz
+            <audio controls><source src="music/ast.mp3" type="audio/mpeg"></audio>
+            </li>
+            <li><em>Capricho Arabe</em> by Francisco Tarrega
+            <audio controls><source src="music/cap.mp3" type="audio/mpeg"></audio>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 m6 l6" style="border:2px solid white; border-radius:5px; margin-right:-30px;">
+          <h5>Division 1 Fencer (7 years)</h5>
+          <p>Though NYU is a Division III school, the fencing program competes at a Division 1 level</p>
+          <p class="bold">Accomplishments:</p>
+          <ul>
+            <li>4 year Varsity Fencer @ NYU</li>
+            <li>1st place @ Fencers Club Jr. Mens Event</li>
+            <li>2nd place @ Div 1A Qualifier</li>
+            <li>2nd in the district of Somerset</li>
+            <li>9th in the state of NJ</li>
+            <li>Attended Junior Olympics, North American Cup (2x), & Nationals (3x)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(".element").typed({
+        strings: ["D^300e^300v^300e^300l^300o^300p^300e^300r "],
+        typeSpeed: 0.1,
+        cursorChar: "_"
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      var entrepreneur = document.getElementById('entrepreneur');
+      entrepreneur.addEventListener('mouseenter', handleEntrepreneurHover);
+    });
+
+    function handleEntrepreneurHover(event) {
+      console.log('hello');
+      this.textContent = "GIVE ME MONEY (:";
+      document.getElementById('note').classList.add('hidden');
+    }
+  </script>
+  <script type="text/javascript">
+    $("#ios").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#phone-apps").offset().top
+      }, 2000);
+    });
+    $("#web").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#web-apps").offset().top
+      }, 2000);
+    });
+    $("#misc").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#misc-stuff").offset().top
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
