@@ -1,0 +1,121 @@
+.card {
+    border:none;
+    box-shadow: none;
+  }
+.card-title {
+  color:black;
+}
+
+nav {
+  background-color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.element {
+  padding:5px;
+}
+
+.intro-header-small {
+  font-size:1.8em; 
+  margin-top:0; 
+}
+
+.terminal-bg {
+  display: inline-block;
+  width:165px;
+  height:55px;
+  background-color: black;
+  color:#52B22A;
+  border-top: 10px solid gray;
+  border-radius: 3px;
+  font-family: "Courier";
+  font-size:0.8em;
+}
+
+@font-face{
+    font-family: "Rock-Elec";
+    src: url('fonts/ROCKELEC.TTF');
+}
+
+.headerbg {
+  background-image: url("../img/road.jpg");
+  background-size: 100% 100%;
+  color:white;
+  height:100vh;
+}
+
+.guitar {
+  /*font-family: "Rock-Elec";*/
+  font-family: "cursive";
+  font-size:1.1em;
+}
+
+.hidden {
+  display:none;
+}
+
+.iphone-img {
+  width:100%;
+}
+
+.circle {
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  margin-right:15px;
+  position:absolute; 
+  right:140px; 
+  top:10px;
+}
+
+.contact {
+  position:absolute; 
+  top:3px; 
+  right:30px; 
+  font-size:1.3em; 
+  color:white;
+}
+
+.name {
+  position:absolute; left:50px; top:8%;
+}
+
+.tagline {
+  position:absolute; top:21%; left:50px; font-size:1.2em;
+}
+
+.caption {
+  position:absolute; right:30px; bottom:0;
+}
+
