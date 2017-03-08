@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <style type="text/css">
+      nav {
+        background-color: black;
+      }
+
+      .btn {
+        background-color:black;
+      }
+
+      .hvrbox,
+      .hvrbox * {
+        box-sizing: border-box;
+      }
+      .hvrbox {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+      }
+      .hvrbox img {
+        max-width: 100%;
+      }
+      .hvrbox .hvrbox-layer_bottom {
+        display: block;
+      }
+      .hvrbox .hvrbox-layer_top {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 15px;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -ms-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+      }
+      .hvrbox:hover .hvrbox-layer_top,
+      .hvrbox.active .hvrbox-layer_top {
+        opacity: 1;
+      }
+      .hvrbox .hvrbox-text {
+        text-align: center;
+        font-size: 18px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .hvrbox .hvrbox-text_mobile {
+        font-size: 15px;
+        border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+        border-top: 1px solid rgba(179, 179, 179, 0.7);
+        margin-top: 5px;
+        padding-top: 2px;
+        display: none;
+      }
+      .hvrbox.active .hvrbox-text_mobile {
+        display: block;
+      }
+
+      .grid {
+        padding-left:100px;
+        padding-right: 100px;
+      }
+      .grid-item { 
+        width: 300px; 
+      }
+      .grid-item--width2 { 
+        width: 400px; 
+      }
+      .grid-item img {
+        width:100%;
+      }
+
+      /*.books {
+        padding-left:100px;
+        padding-right:100px;
+      }
+
+      .book {
+        float:left;
+        width:200px;
+        margin:15px;  
+      }
+
+      .book img {
+        width: 100% !important;
+        height: auto !important;
+      }*/
+    </style>
+
+    <body>
+      <div class="navbar-fixed">
+        <nav style="height:115px;">
+          <div class="nav-wrapper" style="padding-left:0.5cm; padding-right: 1cm;">
+            <a href="#!" class="brand-logo center">Mir N. Ali</a>
+            <div class="center" style="padding-top:50px;">
+              <a class="waves-effect waves-light btn disabled" id="about-me-btn">About Me</a>
+              <a class="waves-effect waves-light btn" id="icons-btn">Icons</a>
+              <a class="waves-effect waves-light btn " id="reading-list-btn">Reading List</a>
+              <a class="waves-effect waves-light btn" id="hobbies-btn">Hobbies</a>
+            </div>           
+          </div>
+
+        </nav>
+      </div>
+      
+
+      <div class="center" style="margin-top: 70px;">
+
+        <div id="about-me" class="active">
+          <div class="row">
+            <div class="col s12 m5 l4">
+              <div class="card-panel" style="height: 100%;">
+                <p style="margin-top:-10px; text-align: left;"><strong>Home town</strong></p>
+                <img style="width:100%; height:27vh;" src="http://az616578.vo.msecnd.net/files/2016/02/13/635909297228920178-1328830355_brooklyn%20article%20header%20.png">
+                <p style="text-align: left;"><strong>Current Residence</strong></p>
+                <img style="width:100%; height:33vh;" src="https://az616578.vo.msecnd.net/files/responsive/embedded/any/desktop/2016/01/29/6358962874027172061056598635_map_of_montgomery_nj.jpg">
+              </div>
+            </div>
+            <div class="col s12 m7 l8">
+              <div class="card-panel">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <p>Half Taiwanese</p>
+                    <img style="width:100%; height:220px;" src="http://static.webshopapp.com/shops/094414/files/054946236/taiwan-flag-vector-free-download.jpg">
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <p>Half Bangladeshi</p>
+                    <img style="height:220px; width: 100%;" src="https://www.norad.no/globalassets/bilder-2015--/flagg/bangladesh.gif?preset=Fluid1170">
+                  </div>
+                </div>
+                <div class="row" style="padding:0; margin:0; margin-top:-30px;">
+                  <div class="col s12 m6 l3">
+                    <div style="width:100%; height:20vh; background-color:#c2595a; border-radius: 5px"><p style="color:white; font-size: 3.5em; line-height: 2.6">D</p></div>
+                    <p><strong>Developer</strong></p>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div style="width:100%; height:20vh; background-color:#59C2C1; border-radius: 5px"><p style="color:white; font-size: 3.5em; line-height: 2.6;">E</p></div>
+                    <p><strong>Entrepreneur</strong></p>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div style="width:100%; height:20vh; background-color:#d93053; border-radius: 5px"><p style="color:white; font-size: 3.5em; line-height: 2.6;">A</p></div>
+                    <p><strong>Athlete</strong></p>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div style="width:100%; height:20vh; background-color: #d5c7e3; border-radius: 5px"><p style="color:white; font-size: 3.5em; line-height: 2.6;">M</p></div>
+                    <p><strong>Musician</strong></p>
+                  </div>
+                <!-- End Row -->
+                </div>
+              <!-- End Card Panel -->
+              </div>
+            <!-- End Col -->
+            </div>
+          <!-- End about me section -->
+          </div>
+
+        
+        </div>
+
+        <div id="icons" class="hide">
+            <h5 style="margin-top:25px;">Here's a list of all the people that either influenced my life, or lives by a set of principles that I aim to achieve</h5>
+
+            <div class="grid">
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2534551796ee0a2638b462ce82e33b65091b1d42_1600x1200.jpg?cb=05112016&quality=89&w=800" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Elon Musk</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="https://pbs.twimg.com/profile_images/540248015571660800/9qXSC-X9.png">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Tony Robbins</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Albert Einstein</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="https://pbs.twimg.com/profile_images/794596124686487552/kqpbolIc.jpg">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Bernie Sanders</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="http://static6.businessinsider.com/image/54f08fe069beddc40fcb7819/billionaire-hedge-fund-manager-ray-dalio--who-encourages-employees-to-see-their-team-as-a-machine--is-building-an-artificial-intelligence-unit.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Ray Dalio</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="http://preneurmarketing.com/wp-content/uploads/2014/01/Robert-Kiyosaki.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Robert Kiyosaki</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="http://0.tqn.com/d/history1800s/1/S/S/K/-/-/Ralph-Waldo-Emerson-2600-3x2.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Ralph Waldo Emerson</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="hvrbox">
+                  <img src="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2534551796ee0a2638b462ce82e33b65091b1d42_1600x1200.jpg?cb=05112016&quality=89&w=800" alt="Mountains" class="hvrbox-layer_bottom">
+                  <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">Elon Musk</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="reading-list" class="hide">
+          <p>This is a list of books that have profoundly impacted my life.</p>
+          <p>Click on the cover the access a free PDF copy</p>
+
+          <div class="grid">
+            <div class="grid-item">
+              <a target="_blank" href="http://academic.udayton.edu/LawrenceUlrich/LeaderArticles/Drucker%20Managing%20Oneself.pdf">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/618d4bK5q5L._SX344_BO1,204,203,200_.jpg">              
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="_blank" href="https://www.gutenberg.org/files/2500/2500-h/2500-h.htm">
+                <img src="http://images.gr-assets.com/books/1428715580l/52036.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="_blank" href="https://www.paulasset.com/articles/wp-content/uploads/2012/11/RICH-DAD-POOR-DAD.pdf">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51lZMzNOwrL._SX258_BO1,204,203,200_.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="blank" href="http://images.kw.com/docs/2/1/2/212345/1285134779158_htwfaip.pdf">
+                <img src="https://s-media-cache-ak0.pinimg.com/564x/77/81/1b/77811b9ed82789fd1882ff181ac33a89.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="_blank" href="http://eventualmillionaire.com/Resources/ThinkandGrowRichebook.pdf">
+                <img src="https://1.bp.blogspot.com/-xTNE9gTe3fY/Vw5xRfAsA8I/AAAAAAAAEPU/PIgIDzSRvQQz-JPhBCNp6pSg8teXBK7xACLcB/s400/13001239_685773991562367_6265652506510612376_n.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="_blank" href="http://www.bestbenefitsolutions.com/uploads/3/4/7/0/34704235/money_master_the_game__7_simple_-_tony_robbins.pdf">
+                <img src="https://www.skillcollector.com/wp-content/uploads/2015/06/Tony-Robbins-Money-MasterThe-Game-cover.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="http://www.federaljack.com/ebooks/The%20Tipping%20Point/Gladwell,%20Malcolm%20-%20The%20Tipping%20Point.pdf">
+                <img src="https://freethetippingpoint.files.wordpress.com/2014/09/61h4nxkajxl.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+              <a target="_blank" href="http://www.fxf1.com/english-books/The%20Intelligent%20Investor%20-%20BENJAMIN%20GRAHAM.pdf">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41lNILAEAfL._SX336_BO1,204,203,200_.jpg">
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="hobbies" class="hide" style="margin-top:25px;">
+          <div class="grid">
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="https://nyfencingacademy.files.wordpress.com/2010/10/romain-cannone-right-european-team-championships-maribor-2015-img_0513.jpg" alt="Fencing" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Fencing</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="https://www.classicalguitarcorner.com/wp-content/uploads/Classical-Guitar-Technique.jpg" alt="Classical Guitar" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Classical Guitar</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://i.dailymail.co.uk/i/pix/2015/04/01/16/27309AE200000578-3021589-image-a-38_1427900690423.jpg" alt="Soccer" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Soccer</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://static4.businessinsider.com/image/564e32c5ecad041068dfb0f1/how-to-win-a-game-of-chess-in-two-moves.jpg" alt="Chess" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Chess</div>
+                </div>
+              </div>
+            </div> 
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://az616578.vo.msecnd.net/files/2016/07/24/6360498178139720611073070814_Rick%20and%20Morty.jpg" alt="Rick and Morty" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Rick and Morty</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg" alt="Marvel" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Luke Cage</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://blog.oxforddictionaries.com/wp-content/uploads/mountain-names.jpg" alt="Hiking" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Hiking</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://cdn-static.denofgeek.com/sites/denofgeek/files/2015/12/agents_of_shield_season_3-1920x1200.jpg" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Agents of Shield</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="https://art-s.nflximg.net/081a7/4118bc185081d7b9ff5160dc6e5304cbaab081a7.jpg" alt="Stranger things" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Stranger Things</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://1mtmzf15atms4vmyw1a609ik.wpengine.netdna-cdn.com/wp-content/uploads/2013/07/edm-rave-crowd.jpg" alt="Raves" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Raves</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://assets.schwarzenegger.com/images/img-1.jpg" alt="arnold" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Weight Lifting</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://4.bp.blogspot.com/-99DdDrBwddM/VTDT5_c3M6I/AAAAAAAABwI/7oNVXMcX2XQ/s1600/kawasaki-vulcan-s-black.jpg" alt="Kawasaki vulcan s" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Motorcycles</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="http://cdn.hercampus.com/s3fs-public/2016/08/28/traveling2.jpg" alt="Ping Pong" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Traveling</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="hvrbox">
+                <img src="https://www.loveroms.com/assets/data/nintendo-64/super-smash-bros.-(u)-nintendo-64.png" alt="Ping Pong" class="hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">Traveling</div>
+                </div>
+              </div>
+            </div>
+          <!-- End second row -->
+          </div>
+        <!-- End hobbies div  -->
+        </div>
+      
+      
+      <!-- End Containing Body -->
+      </div>      
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          
+          var aboutMeBtn = document.getElementById('about-me-btn');
+          var iconsBtn = document.getElementById('icons-btn');
+          var readingListBtn = document.getElementById('reading-list-btn');
+          var hobbiesBtn = document.getElementById('hobbies-btn');
+
+          aboutMeBtn.addEventListener('click', function(e) {
+            handleContentSwitch(e, 'about-me');
+          });
+          iconsBtn.addEventListener('click', function(e) {
+            handleContentSwitch(e, 'icons')
+          });
+          readingListBtn.addEventListener('click', function(e) {
+            handleContentSwitch(e, 'reading-list')
+          });
+          hobbiesBtn.addEventListener('click', function(e) {
+            handleContentSwitch(e, 'hobbies')
+          });
+        });
+
+        function handleContentSwitch(event, tab) {
+          var btn = tab+'-btn';
+          var btns = document.getElementsByClassName('disabled');
+          btns[0].classList.remove('disabled');
+          var currentBtn = document.getElementById(btn);
+          currentBtn.classList.add('disabled');
+
+          var activeDiv = document.getElementsByClassName('active');
+          console.log(activeDiv);
+          Array.prototype.forEach.call(activeDiv, function(ele) {
+            ele.classList.add('hide');
+            ele.classList.remove('active');
+          });
+
+          var contentDiv = document.getElementById(tab);
+          contentDiv.classList.remove('hide');
+          contentDiv.classList.add('active');
+
+          if (tab !== 'about-me') {
+            $('.grid').masonry({
+              // options
+              itemSelector: '.grid-item',
+              columnWidth: 300
+            });
+          }
+        }
+
+      </script>
+    </body>
+  </html>
