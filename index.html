@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Web Dev</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
@@ -20,8 +21,10 @@
   </nav> -->
 <div class="headerbg">
   <div>
-    <img src="img/face.png" class="circle" style="">
-    <p href="" class="contact">Contact Me</p>
+    <a href="#modal1">
+      <img src="img/face.png" class="circle" style="">
+      <p href="" class="contact">Contact Me</p>
+    </a>
   </div>
   
   <h1 class="name">Mir N. Ali</h1>
@@ -30,6 +33,22 @@
   <div class="center">
   <a class="waves-effect waves-light btn-large" style="margin-top:30.5%; margin-right:20px;" href="portfolio.html">Portfolio</a>
   <a class="waves-effect waves-light btn-large" style="margin-top:30.5%;" href="resume4.0.pdf">Resume</a>
+  </div>
+</div>
+
+<div id="modal1" class="modal center" style="margin-top:100px;">
+  <div class="modal-content">
+    <h4>Feel free to call/message me at anytime</h4>
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <i class="material-icons large">email</i>
+        <h5>mna271@nyu.edu</h5>
+      </div>
+      <div class="col s12 m6 l6">
+        <i class="material-icons large">phone</i>
+        <h5>(732) 325 - 8451</h5>
+      </div>
+    </div>
   </div>
 </div>
   
@@ -74,44 +93,15 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/typed.js"></script>
+  
   <script type="text/javascript">
-    $(function() {
-      $(".element").typed({
-        strings: ["D^300e^300v^300e^300l^300o^300p^300e^300r "],
-        typeSpeed: 0.1,
-        cursorChar: "_"
-      });
+    $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal').modal();
     });
   </script>
   <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-      var entrepreneur = document.getElementById('entrepreneur');
-      entrepreneur.addEventListener('mouseenter', handleEntrepreneurHover);
-      $(".block1").animate({ "left": "+=50%" }, 5000 );
-    });
-
-    function handleEntrepreneurHover(event) {
-      console.log('hello');
-      this.textContent = "GIVE ME MONEY (:";
-      document.getElementById('note').classList.add('hidden');
-    }
-  </script>
-  <script type="text/javascript">
-    $("#ios").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#phone-apps").offset().top
-      }, 2000);
-    });
-    $("#web").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#web-apps").offset().top
-      }, 2000);
-    });
-    $("#misc").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#misc-stuff").offset().top
-      }, 2000);
-    });
+    
   </script>
 </body>
 </html>

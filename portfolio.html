@@ -151,5 +151,27 @@
     </div>
     <div class="col s12 m3"><img style="margin-left:-200px;" class="iphone-img" src="img/harness-app-2.png"></div>
   </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $("#ios").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#phone-apps").offset().top
+      }, 2000);
+    });
+    $("#web").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#web-apps").offset().top
+      }, 2000);
+    });
+    $("#misc").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#misc-stuff").offset().top
+      }, 2000);
+    });
+  </script>
 </body>
+
+
 </html>
