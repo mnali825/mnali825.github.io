@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Portfolio</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
 <body>
-  <div class="row" style="margin-top:0px;" id="web-apps">
-    <h2 class="center" style="margin-bottom:-15px;">Web Apps</h2>
+  <div class="parallax-container">
+    <h1 class="center-align text-shadow white-text" style="margin-top:175px;">Web Apps</h1>
+    <div class="parallax"><img src="img/web-dev.jpeg"></div>
+  </div>
+        
+  <div class="row container" style="margin-top:0px;" id="web-apps">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
@@ -16,7 +21,7 @@
         </div>
         <div class="card-content">
           <p class="title">Great Debate</p>
-          <p><span class="bold">AJAX | Passport.js | MongoDB | Mongoose | Express.js | Handlebars.js| Node.js | JavaScript </span></p>
+          <p><span class="bold">AJAX | Passport.js | MongoDB | Mongoose | Express.js | Handlebars.js | Node.js | JavaScript </span></p>
           <p>A Reddit style application for debating pop culture trends and icons. Users can securely sign up and "second" (like) arguments seamlessly with AJAX</p>
         </div>
         <div class="card-action">
@@ -32,12 +37,12 @@
           <span class="card-title"></span>
         </div>
         <div class="card-content">
-          <p class="title">Owl Visual Solutions</p>
-          <p><span class="bold">HTML5 | CSS3 | jQuery</span></p>
-          <p>Mobile responsive landing page for drone photography company focused on art</p>
+          <p class="title">Izmee - Dating Site</p>
+          <p><span class="bold">AJAX | Passport.js | MongoDB | Mongoose | Express.js | Handlebars.js | Node.js | JavaScript</span></p>
+          <p>A dating app that matches users based on preferences. Update preferences and descriptions with AJAX. Messaging feature coming soon.</p>
         </div>
         <div class="card-action">
-          <a target="_blank" href="http://www.owlvs.com">Try it live</a>
+          <a target="_blank" href="https://izmee.herokuapp.com">Try it live</a>
         </div>
       </div>
     </div>
@@ -60,7 +65,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row container">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
@@ -152,24 +157,31 @@
     <div class="col s12 m3"><img style="margin-left:-200px;" class="iphone-img" src="img/harness-app-2.png"></div>
   </div>
 
+  <div class="row center" style="padding:100px;">
+    <h3>Contact</h3>
+    <div class="col s12 m4 l4">
+      <i class="material-icons large">email</i>
+      <h5>mna271@nyu.edu</h5>
+    </div>
+    <div class="col s12 m4 l4">
+      <i class="material-icons large">phone</i>
+      <h5>(732) 325 - 8451</h5>
+    </div>
+    <div class="col s12 m4 l4">
+      <a href="resume4.0.pdf"><i class="material-icons large">library_books</i>
+      <h5>Resume</h5></a>
+    </div>
+    
+  </div>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
-    $("#ios").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#phone-apps").offset().top
-      }, 2000);
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
     });
-    $("#web").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#web-apps").offset().top
-      }, 2000);
-    });
-    $("#misc").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#misc-stuff").offset().top
-      }, 2000);
-    });
+        
   </script>
 </body>
 

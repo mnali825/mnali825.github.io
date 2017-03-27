@@ -86,3 +86,7 @@ nav {
   position:absolute; right:30px; bottom:0;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px #000;
+}
+
