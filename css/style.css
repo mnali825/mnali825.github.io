@@ -13,6 +13,10 @@ p {
   font-size:1.1em;
 }
 
+a {
+  color:#ff6f00!important;
+}
+
 .col {
   padding:0;
 }
@@ -30,3 +34,4 @@ p {
 .filled {
 
 }
+
